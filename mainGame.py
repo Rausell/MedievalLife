@@ -53,7 +53,6 @@ textRect.center = (width // 2, height // 2)
 
 #Creating initial items
 #Can be made into a callable function
-stick = Item("Stick", 2)
 wheat = Item("Wheat", 1)
 
 #Creating initial inventory with capacity of 10
@@ -61,7 +60,7 @@ player_inventory = Inventory(capacity = 10)
 
 #Adding items to inventory
 #Can be made into a callable function
-player_inventory.add_item(stick)
+player_inventory.add_item(wheat)
 
 #Displaying inventory
 #Can be made into a callable function based on user given command
@@ -77,7 +76,7 @@ player_inventory.display_items()
 #Shows the graphical display until user exits from page
 while True:
     #Display surface is covered in white
-    screen.fill(white)
+    screen.fill(black)
     #Copy text surface obj to display surface obj at middle coordinates
     screen.blit(img, textRect)
     #Iterate over list of event objs returned by pygame.event.get() method
